@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>mm的H5框架</title>
+<link rel="shortcut icon" href="/favicon.ico">
+<!-- css -->
+<link rel="stylesheet" href="../css/mm.css">
+<link rel="stylesheet" href="../css/mm-extend.css">
+<link rel="stylesheet" type="text/css" href="../css/theme.css">
+<!-- js -->
+<script src="../js/zepto.js"></script>
+<script src="../js/config.js"></script>
+<style>
+body, .page {
+	background-color: #fff;
+}
+</style>
+</head>
+<body>
+<div class="page-group">
+  <div class="page page-current" id="page-index"> 
+    <!--你的html代码-->
+    <header class="bar bar-t">
+      <nav>
+        <div class="fl"><a href="#" class="back"><i class="icon icon-menu-left"></i><span>返回</span></a></div>
+        <div class="fm">选择器</div>
+      </nav>
+    </header>
+    <div class="content">
+      <section> 
+        <!-- 选择器 -->
+        <div class="select">
+          <ul id="select">
+            <li id="select1">
+              <dl>
+                <dt class="">分类</dt>
+                <dd class="select-all"><a href="#">全部</a></dd>
+                <dd><a href="#">商业</a></dd>
+                <dd><a href="#">财经</a></dd>
+                <dd><a href="#">生活</a></dd>
+                <dd><a href="#">体育</a></dd>
+                <dd><a href="#">八卦</a></dd>
+              </dl>
+            </li>
+            <li id="select2">
+              <dl>
+                <dt class="">时间</dt>
+                <dd class="select-all"><a href="#">全部</a></dd>
+                <dd><a href="#">一日</a></dd>
+                <dd><a href="#">三日</a></dd>
+                <dd><a href="#">一周</a></dd>
+                <dd><a href="#">半月</a></dd>
+                <dd><a href="#">一月</a></dd>
+              </dl>
+            </li>
+            <li class="select-result">
+              <dl>
+                <dt>已选条件：</dt>
+              </dl>
+            </li>
+          </ul>
+        </div>
+        <script src="/js/mm-selector.js"></script>
+      </section>
+    </div>
+  </div>
+</div>
+<script src="../js/mm.js"></script> 
+<script src="../js/mm-extend.js"></script> 
+<script src="../js/demo.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>mm的H5框架</title>
+<link rel="shortcut icon" href="/favicon.ico">
+<!-- css -->
+<link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+<link rel="stylesheet" href="../css/mm.css">
+<link rel="stylesheet" href="../css/mm-extend.css">
+<link rel="stylesheet" type="text/css" href="../css/theme.css">
+<!-- js -->
+<script src="../js/zepto.js"></script>
+<script src="../js/config.js"></script>
+</head>
+<body>
+<div class="page-group">
+  <div class="page page-current" id="page-index"> 
+    <!--你的html代码-->
+    <header class="bar bar-t">
+      <nav>
+        <div class="fl"><a href="#" class="back"><i class="icon icon-menu-left"></i><span>返回</span></a></div>
+        <div class="fm">幻灯片</div>
+      </nav>
+    </header>
+    <div class="content">
+    	<section>
+        <h4>图片轮播</h4>
+          <!-- 图片轮播广告 -->
+          <div class="swiper-container swiper-img">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">Slide 1</div>
+              <div class="swiper-slide bg-default">Slide 2</div>
+              <div class="swiper-slide bg-info">Slide 3</div>
+              <div class="swiper-slide bg-primary">Slide 4</div>
+              <div class="swiper-slide bg-success">Slide 5</div>
+              <div class="swiper-slide bg-warning">Slide 6</div>
+              <div class="swiper-slide bg-danger">Slide 7</div>
+            </div>
+            
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+      </section>
+      
+      <h4>文字轮播</h4>
+      <section class="bg-white">
+      
+          <!-- 文字轮播广告 -->
+          <div class="swiper-container swiper-text">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">Slide 1</div>
+              <div class="swiper-slide bg-default">Slide 2</div>
+            </div>
+          </div>
+      </section>
+    </div>
+  </div>
+</div>
+<script src="../js/swiper.min.js"></script>
+<script src="../js/mm.js"></script>
+<script src="../js/mm-extend.js"></script>
+<script src="../js/demo.js"></script>
+</body>
+</html>

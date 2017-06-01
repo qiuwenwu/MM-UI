@@ -1,0 +1,149 @@
+@charset "utf-8";
+.page, body { background-color: #efeff4; }/* #f8f8f8 */
+body { color:#333; }
+article {background:#FFF; }
+
+/* 项目 */
+.form,.grid,.card,.list { background:#FFF; }
+.list { border-bottom:1px solid #e5e5e5; border-top:1px solid #e5e5e5; }
+.item article {background:none; }
+.item-title { background:#f8f8f8; color:#666; }
+.item h5 { color: #666; }
+
+/*== 文章 ==*/
+.prompt { color:#666; }
+.desc,.desc-small { color:#999; }
+.time { color:#999; }
+.chat h6 { color:#666; font-weight:normal; }
+.info,.hot,.zan { color:#999; }
+.news dt{ color:#333; }
+.price {color: #F40; font-weight:600;}
+del {color:#666;}
+
+/* 文本颜色 */
+.text-default { color: #999 !important; }
+.text-primary { color: #3385ff !important; }
+.text-success { color: #1AAD19 !important; }
+.text-info { color: #18b4ed !important; }
+.text-warning { color: #E64340 !important; }
+.text-danger { color: #f8c400 !important; }
+.text-white { color: #FFF !important; }
+.text-black { color: #000 !important; }
+.text-gray { color: #666 !important; }
+.text-silver{ color: #e5e5e5 !important; }
+
+/* 选择器 */
+.select { background:#FFF; }
+.select a:hover { background:#f3edc2; color:#f60; }
+.selected a, .select-result a:hover { color: #fff; background-color: #f60; }
+.select-result a:hover { color:#f3edc2; }
+
+/*== 链接 ==*/
+a { color: #586C94; }
+a:active, a:focus{ background-color: #ECECEC; }
+.plate a:active .item,.plate a:focus .item { background-color: #999; color:#FFF; }
+.link { color: #586C94; }
+.searchbar-cancel { color: #1AAD19; } /* 输入栏字体颜色 */
+
+/* 链接样式 */
+.link-none {background:none;}
+.link-arrow,.link-close,.link-point,.link-point-l {padding-right:1.5rem !important;background-image:url("../img/arrow.png");background-size:0.7rem;background-repeat:no-repeat;background-position:97% center;background-position:-webkit-calc(100% - .5rem) center;background-position:calc(100% - .5rem) center;}
+.link-close {background-image:url("../img/close.png");}
+.link-point,.link-point-l {background-image:url("../img/point.png");}
+.link-point-l {background-size:0.5rem;padding-right:0;background-position:.25rem center;background-position:-webkit-calc(.25rem) center;background-position:calc(.25rem) center;}
+
+.tool a{ background:none; color:#666; }
+.tool a:active, .tool a:focus, .tool .active { color: #1AAD19; }
+.active .stroke, a:active .stroke, a:focus .stroke, a:focus .stroke{ -webkit-text-fill-color: #1AAD19; color: #586C94 !important; }
+.tool .item { background-color: #FDFDFD; }
+.tool a:active .item , .tool a:focus .item , .tool .active .item { color: #1AAD19;background-color: #FDFDFD; }
+a .item { color:#333; }
+
+/* 导航 */
+nav, .nav{ background-color: #373737; color: #FFF; }
+nav a,.nav a { background:none; color:#FFF; }
+nav a:active,.nav a:active, nav a:focus,.nav a:focus, nav .active,.nav .active { color: #586C94; }
+.picker-modal nav,.picker-modal .nav { background:#FFF; color:#666; }
+.picker-modal nav .fm,.picker-modal .nav .fm{ font-weight:normal; }
+
+/*=== 按钮 ===*/
+.btn { background: none; border-color: #ccc; color: #666;}
+.btn .icon-c,.btn .icon-a { background: none; border-color: #fff; color: #fff;}
+.btn-default { background-color: #999; border-color: #888; color: #FFF;}
+.btn-primary { background-color: #3385ff; border-color: #317ef3; color: #FFF; }
+.btn-success { background-color:#1AAD19; border-color: #179B16; color: #FFF; }
+.btn-info { background-color: #18b4ed; border-color: #1ca7da; color: #FFF; }
+.btn-warning { background-color:#E64340; border-color: #CE3C39; color: #FFF; }
+.btn-danger { background-color: #f8c400; border-color: #F8B500; color: #FFF; }
+.btn-black { background-color: #666; border-color: #555; color: #FFF; }
+.btn-default-x,.btn-default-x .icon-c,.btn-default-x .icon-a {border-color:#ccc;color:#666;background-color:#FFF;}
+.btn-primary-x,.btn-primary-x .icon-c,.btn-primary-x .icon-a {border-color:#3385ff;color:#3385ff;background-color:#FFF;}
+.btn-success-x,.btn-success-x .icon-c,.btn-success-x .icon-a {border-color:#1AAD19;color:#1AAD19;background-color:#FFF;}
+.btn-info-x,.btn-info-x .icon-c,.btn-info-x .icon-a {border-color:#18b4ed;color:#18b4ed;background-color:#FFF;}
+.btn-warning-x,.btn-warning-x .icon-c,.btn-warning-x .icon-a {border-color:#E64340;color:#E64340;background-color:#FFF;}
+.btn-danger-x,.btn-danger-x .icon-c,.btn-danger-x .icon-a {border-color:#f8c400;color:#f8c400;background-color:#FFF;}
+.btn-link {color:#1AAD19;}
+.btn .icon-c,.btn .icon-a { background: none; }
+.btn:active,.btn:focus{ background-color:#ECECEC; color:#FFF; }
+.btn:active .icon-c,.btn:focus .icon-c,.btn:active .icon-a,.btn:focus .icon-a { color: #FFF; border-color: #fff; }
+.btn-default:active,.btn-default:focus,.btn-default-x:active,.btn-default-x:focus { background-color:#888; border-color: #888; }
+.btn-primary:active,.btn-primary-x:active,.btn-primary:focus,.btn-primary-x:focus { background-color:#317ef3; border-color: #317ef3;}
+.btn-success:active,.btn-success-x:active,.btn-success:focus,.btn-success-x:focus { background-color:#179B16; border-color: #179B16;}
+.btn-info:active,.btn-info-x:active,.btn-info:focus,.btn-info-x:focus { background-color:#1ca7da; border-color: #1ca7da;}
+.btn-warning:active,.btn-warning-x:active,.btn-warning:focus,.btn-warning-x:focus { background-color:#CE3C39; border-color: #CE3C39;}
+.btn-danger:active,.btn-danger-x:active,.btn-danger:focus,.btn-danger-x:focus {  background-color:#F8B500; border-color: #F8B500;}
+.btn-black:active,.btn-black-x:active,.btn-black:focus,.btn-black-x:focus {  background-color:#555; border-color: #555;}
+.control .btn-link { color: #3CC51F; }
+.control .btn-s { color: #666; }
+.btn-link:active,.btn-link:focus { background: #ECECEC; }
+.disabled { pointer-events: none;filter:alpha(opacity=65); -moz-opacity:0.65; -khtml-opacity: 0.65; opacity: 0.65; }
+
+.control-group input ~ .btn-default-x:last-child,.control-group input ~ .btn-primary-x:last-child,.control-group input ~ .btn-success-x:last-child,.control-group input ~ .btn-info-x:last-child,.control-group input ~ .btn-warning-x:last-child,.control-group input ~ .btn-danger-x:last-child { border-color:#CCC; }
+
+/* 背景色 */
+.bg-default { background-color: #999 !important; }
+.bg-primary { background-color: #3385ff !important; }
+.bg-success { background-color:#1AAD19 !important; }
+.bg-info { background-color: #18b4ed !important; }
+.bg-warning { background-color:#E64340 !important; }
+.bg-danger { background-color: #f8c400 !important; }
+.bg-white { background-color: #FFF !important; }
+.bg-white-a { background-color: rgba(255,255,255,0.65) !important; }
+.bg-no { background:none; }
+
+/* 边框 */
+.br-default { border-color: #eeeeee !important; }
+.br-primary { border-color: #3385ff !important; }
+.br-success { border-color:#1AAD19 !important; }
+.br-info { border-color: #18b4ed !important; }
+.br-warning { border-color:#E64340 !important; }
+.br-danger { border-color: #f8c400 !important; }
+.br-white { border-color: #FFF !important; }
+
+/* 指定色 */
+.red { background-color: #E64340;  }
+.red:before, .red:after { border-color: #E64340; }
+.orange { background-color: #FFB100; }
+.orange:before, .orange:after { border-color: #FFB100; }
+.yellow { background-color: #f8c400; }
+.yellow:before, .yellow:after { border-color: #f8c400; }
+.green{ background-color: #1AAD19; }
+.green:before, .green:after { border-color: #1AAD19; }
+.cyan{ background-color: #18b4ed; }
+.cyan:before, .cyan:after { border-color: #18b4ed; }
+.blue { background-color: #3385ff; }
+.blue:before, .blue:after { border-color: #3385ff; }
+.purple{ background-color:#C3F; }
+.purple:before, .purple:after { border-color: #C3F; }
+
+/* 夜晚主题色 */
+.night { border: none; background:none; border-bottom: 1px solid #222; }
+.night li { border: none; background:none; }
+.night .item-title { border:none; background: rgba(34, 34, 34,0.8); color:#999; }
+.night .item { border-color: #222; }
+.night a { color:#999; }
+.night a:active, .night a:focus,.night .active { color:#999; background: rgba(34, 34, 34,0.5); }
+.night a:active .item, .night a:focus .item,.night .active .item { color:#999; background: rgba(34, 34, 34,0.5); }
+.night .btn-link { color:#999; }
+.night .btn-link:active, .night .btn-link:focus { background: rgba(34, 34, 34,0.5); }
+.night a h1,.night a h2,.night a h3,.night a h4,.night a h5,.night a h6 { color:#999; }

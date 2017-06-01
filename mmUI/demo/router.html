@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>mm的H5框架</title>
+<link rel="shortcut icon" href="/favicon.ico">
+<!-- css -->
+<link rel="stylesheet" href="../css/mm.css">
+<link rel="stylesheet" href="../css/mm-extend.css">
+<link rel="stylesheet" type="text/css" href="../css/theme.css">
+<!-- js -->
+<script src="../js/zepto.js"></script>
+<script src="../js/config.js"></script>
+</head>
+<body>
+<div class="page-group">
+  <div class="page page-current" id="page-index"> 
+    <!--你的html代码-->
+	<header class="bar bar-t">
+        <nav>
+          <div class="fl"><a href="#" class="back"><i class="icon icon-menu-left"></i><span>返回</span></a></div>
+          <div class="fm">路由</div>
+        </nav>
+    </header>
+	<div class="content">
+	<section></section>
+        <section>
+            	<p>
+                    <a href="index.html">路由到同目录下的页面,站外不适用</a>
+                </p>
+                <p>
+                    <a href="./index.html">路由到当前目录下的页面,</a>
+                </p>
+                <p>
+                    <a href="/mmUI/demo/index.html">路由到指定页面，指域名后路径+文件名</a>
+                </p>
+                <p>
+                    <a href="/mmUI/demo/">路由到路径+指域名后路径</a>
+                </p>
+                <p>
+                    <a href="http://baidu.com" external>路由到站外，需在标签加属性external，表示不记录链接</a>
+                </p>
+                <p>
+                    <a href="#page1">路由到当前的内嵌#page1</a>
+                </p>
+        </section>
+    </div>
+  </div>
+  <!-- 内嵌页1 -->
+  <div class="page" id="page1">
+  <header class="bar bar-t">
+        <nav>
+          <div class="fl"><a class="back" href="#"><i class="icon icon-menu-left"></i><span>返回</span></a></div>
+          <div class="fr"><a href="#page2"><span>下一步</span><i class="icon icon-menu-right"></i></a></div>
+          <div class="fm">步骤1</div>
+        </nav>
+    </header>
+  	<div class="content bg-warning">
+        <section>
+        	<h4>内嵌页1</h4>
+            <ul>
+                <p>
+                    <a href="#page-index">路由回当前页的主页</a>
+                </p>
+                <p>
+                    <a href="#page2">路由到当前的内嵌#page2</a>
+                </p>
+            </ul>
+        </section>
+    </div>
+  </div>
+  
+    <!-- 内嵌页2 -->
+    <div class="page" id="page2">
+    <header class="bar bar-t">
+        <nav>
+          <div class="fl"><a class="back" href="#"><i class="icon icon-menu-left"></i><span>返回</span></a></div>
+          <div class="fr"><a href="#page3"><span>下一步</span><i class="icon icon-menu-right"></i></a></div>
+          <div class="fm"><a href="#">步骤2</a></div>
+        </nav>
+    </header>
+  	<div class="content bg-danger">
+        <section>
+        	<h4>内嵌页2</h4>
+            <ul>
+                <p>
+                    <a href="#page-index">路由回当前页的主页</a>
+                </p>
+                <p>
+                    <a href="#page3">路由到当前的内嵌#page3</a>
+                </p>
+            </ul>
+        </section>
+    </div>
+  </div>
+  
+      <!-- 内嵌页3 -->
+    <div class="page" id="page3">
+    <header class="bar bar-t">
+        <nav>
+          <div class="fl"><a class="back" href="#"><i class="icon icon-menu-left"></i><span>返回</span></a></div>
+          <div class="fr"><a class="open-preloader-success" href="#"><span>完成</span><i class="icon icon-ok"></i></a></div>
+          <div class="fm"><a href="#">步骤3</a></div>
+        </nav>
+    </header>
+  	<div class="content bg-success">
+        <section>
+        	<h4>内嵌页3</h4>
+            <ul>
+                <p>
+                    <a href="#page-index">路由回当前页的主页</a>
+                </p>
+                <p>
+                    <a href="#page1">路由到当前的内嵌#page1</a>
+                </p>
+            </ul>
+        </section>
+    </div>
+  </div>
+</div>
+
+<script src="../js/mm.js"></script>
+<script src="../js/mm-extend.js"></script>
+<script src="../js/demo.js"></script>
+<script>
+  $(function(){
+  //加载提示符
+  $(document).on("pageInit", "#page3", function(e, id, page) {
+	//自定义成功提示
+	$(page).on('click','.open-preloader-success', function () {
+      $.showIndicatorDiy('<div class="box"><p style="padding:1rem 0;"><big class="icon icon-ok"></big></p><p>已完成</p></div>')
+      setTimeout(function () {
+        $.hideIndicatorDiy();
+      }, 2000);
+    });
+  });
+  })
+  </script>
+</body>
+</html>

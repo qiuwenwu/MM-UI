@@ -1,0 +1,377 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN" class="pixel-ratio-1">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>mm的H5框架</title>
+<link rel="shortcut icon" href="/favicon.ico">
+<!-- css -->
+<link rel="stylesheet" href="../css/mm.css">
+<link rel="stylesheet" href="../css/mm-extend.css">
+<link rel="stylesheet" type="text/css" href="../css/theme.css">
+<!-- js -->
+<script src="../js/zepto.js"></script>
+<script src="../js/config.js"></script>
+</head>
+<body>
+<div class="page-group">
+  <div class="page page-current" id="page-index"> 
+    <!--你的html代码-->
+    <header class="bar bar-t">
+      <nav>
+        <div class="fl"><a class="open-panel" data-panel=".panel-left" href="#"><i class="icon icon-th-large"></i><span>菜单</span></a></div>
+        <div class="fr"></div>
+        <div class="fm">首页</div>
+      </nav>
+    </header>
+    <footer class="bar bar-b"> 
+      <!-- 工具栏 -->
+      <div class="grid grid-5 tb tool larger">
+        <ul id="tool">
+          <li><a href="/User?mod=Message">
+            <div class="item">
+              <aside class="media"><i class="icon icon-comment stroke"></i> <span class="icon-tr badge">8</span></aside>
+              <article>
+                <h5>消息</h5>
+              </article>
+            </div>
+            </a></li>
+          <li><a href="/Account?mod=Contact">
+            <div class="item">
+              <aside class="media"><i class="icon icon-book stroke"></i></aside>
+              <article>
+                <h5>通讯录</h5>
+              </article>
+            </div>
+            </a></li>
+          <li><a href="/Home">
+            <div class="item">
+              <aside class="media"><i class="icon icon-home stroke"></i></aside>
+              <article>
+                <h5>首页</h5>
+              </article>
+            </div>
+            </a></li>
+          <li><a href="/Home?mod=News">
+            <div class="item">
+              <aside class="media"><i class="icon icon-send stroke"></i><span class="icon-tr icon-point"></span></aside>
+              <article>
+                <h5>新闻</h5>
+              </article>
+            </div>
+            </a></li>
+          <li><a href="/Account">
+            <div class="item">
+              <aside class="media"><i class="icon icon-user stroke"></i></aside>
+              <article>
+                <h5>我</h5>
+              </article>
+            </div>
+            </a></li>
+        </ul>
+      </div>
+    </footer>
+    <div class="content native-scroll">
+      <article>
+        <div class="item item-lr bn big">
+          <aside class="media"> <img src="../img/demo.jpg"> </aside>
+          <div class="title-small"> 测试测试测试 </div>
+          <div class="desc-small"> <span class="time">2017-05-01</span>测试测试测试 </div>
+        </div>
+        <h1>特写标题</h1>
+        <h2>标题</h2>
+        <h3>标题</h3>
+        <h4>大标题</h4>
+        <h5>章标题</h5>
+        <h6>1.1节标题</h6>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p><img src="../img/demo.jpg"></p>
+        <h6>1.2 节标题<small>试测</small>试测<big>试测</big></h6>
+        <p>测如何</p>
+        <p>测试测试测试测试测试测试测试测试测试测试测<small>试测</small>试测<big>试测</big>试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测<span class="a-75">试测</span><span class="px-9">试测</span>试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试看看如何</p>
+      </article>
+    </div>
+  </div>
+  <div class="panel-overlay"></div>
+  <!-- Left Panel with Reveal effect -->
+  <div class="panel panel-left panel-reveal"> 
+    <!-- class="list list-rl menu night" --> 
+    <!-- 第一个表示模块，第二个表示模块的布局方式，第三个表示模块的作用（如作为菜单、联系人还是产品展示），第四个表示特别主题，如卡片，晚上-->
+    <div class="list menu night mini">
+      <h2>菜单</h2>
+      <ul>
+        <li>
+          <div class="item-title">常用</div>
+        </li>
+        <li><a href="form.html" class="close-panel">
+          <div class="item">
+            <aside class="media"> <img src="../img/demo.jpg"> </aside>
+            <h4>表单</h4>
+          </div>
+          </a> </li>
+        <li> <a href="preview.html" class="close-panel">
+          <div class="item">
+            <h4>表单预览</h4>
+          </div>
+          </a> </li>
+        <li> <a href="button.html" class="close-panel">
+          <div class="item">
+            <h4>按钮</h4>
+          </div>
+          </a> </li>
+        <li> <a href="input.html" class="close-panel">
+          <div class="item">
+            <h4>输入框组</h4>
+          </div>
+          </a> </li>
+        <li> <a href="article.html" class="close-panel">
+          <div class="item">
+            <h4>文章</h4>
+          </div>
+          </a> </li>
+        <li> <a href="grid.html" class="close-panel">
+          <div class="item">
+            <h4>栅格</h4>
+          </div>
+          </a> </li>
+        <li> <a href="panel.html" class="close-panel">
+          <div class="item">
+            <h4>面板</h4>
+          </div>
+          </a> </li>
+        <li> <a href="card.html" class="close-panel">
+          <div class="item">
+            <h4>卡片</h4>
+          </div>
+          </a> </li>
+        <li> <a href="footer.html" class="close-panel">
+          <div class="item">
+            <h4>页脚</h4>
+          </div>
+          </a> </li>
+        <li>
+                <li> <a href="user.html" class="close-panel">
+          <div class="item">
+            <h4>用户信息</h4>
+          </div>
+          </a> </li>
+        <li> <a href="vcard.html" class="close-panel">
+          <div class="item">
+            <h4>名片</h4>
+          </div>
+          </a> </li>
+          <div class="item-title">列表</div>
+        </li>
+        <li> <a href="list-simple.html" class="close-panel">
+          <div class="item">
+            <h4>简单</h4>
+          </div>
+          </a> </li>
+        <li> <a href="list-contact.html" class="close-panel">
+          <div class="item">
+            <h4>联系人</h4>
+          </div>
+          </a> </li>
+        <li> <a href="list-message.html" class="close-panel">
+          <div class="item">
+            <h4>消息</h4>
+          </div>
+          </a> </li>
+        <li> <a href="list-mail.html" class="close-panel">
+          <div class="item">
+            <h4>邮件</h4>
+          </div>
+          </a> </li>
+        <li> <a href="list-meida.html" class="close-panel">
+          <div class="item">
+            <h4>曲目</h4>
+          </div>
+          </a> </li>
+        <li> <a href="chat.html" class="close-panel">
+          <div class="item">
+            <h4>聊天</h4>
+          </div>
+          </a> </li>
+        <li> <a href="list-menu.html" class="close-panel">
+          <div class="item">
+            <h4>单列菜单</h4>
+          </div>
+          </a> </li>
+        <li> <a href="grid-menu.html" class="close-panel">
+          <div class="item">
+            <h4>多列菜单</h4>
+          </div>
+          </a> </li>
+        <li>
+        <li> <a href="list-news.html" class="close-panel">
+          <div class="item">
+            <h4>新闻</h4>
+          </div>
+          </a> </li>
+        <li> <a href="grid-board.html" class="close-panel">
+          <div class="item">
+            <h4>板块</h4>
+          </div>
+          </a> </li>
+        <li>
+        <li> <a href="list-shop.html" class="close-panel">
+          <div class="item">
+            <h4>商铺列表</h4>
+          </div>
+          </a> </li>
+        <li>
+        <li> <a href="list-vcard.html" class="close-panel">
+          <div class="item">
+            <h4>名片列表</h4>
+          </div>
+          </a> </li>
+        <li>
+        <div class="item-title">产品展示</div>
+        </li>
+        <li> <a href="list-product.html" class="close-panel">
+          <div class="item">
+            <aside class="media"> <img src="../img/demo.jpg"> </aside>
+            <h4>产品列表</h4>
+          </div>
+          </a> </li>
+        <li> <a href="list-product-big.html" class="close-panel">
+          <div class="item">
+            <h4>大图产品列表</h4>
+          </div>
+          </a> </li>
+        <li> <a href="grid-product.html" class="close-panel">
+          <div class="item">
+            <h4>常见式</h4>
+          </div>
+          </a> </li>
+        <li> <a href="grid-product-lr.html" class="close-panel">
+          <div class="item">
+            <h4>左右式</h4>
+          </div>
+          </a> </li>
+        <li> <a href="grid-product-s.html" class="close-panel">
+          <div class="item">
+            <h4>简洁式</h4>
+          </div>
+          </a> </li>
+        <li>
+          <div class="item-title">图标</div>
+        </li>
+        <li> <a href="icon.html" class="close-panel">
+          <div class="item">
+            <h4>图标</h4>
+          </div>
+          </a> </li>
+        <li> <a href="icon-stroke.html" class="close-panel">
+          <div class="item">
+            <h4>镂空图标</h4>
+          </div>
+          </a> </li>
+        <li> <a href="icon-wechat.html" class="close-panel">
+          <div class="item">
+            <h4>微信图标</h4>
+          </div>
+          </a> </li>
+        <li> <a href="emoji-wechat.html" class="close-panel">
+          <div class="item">
+            <h4>微信表情</h4>
+          </div>
+          </a> </li>
+        <li> <a href="emoji-qq.html" class="close-panel">
+          <div class="item">
+            <h4>QQ表情</h4>
+          </div>
+          </a> </li>
+        <li>
+          <div class="item-title">动态</div>
+        </li>
+        <li> <a href="search.html" class="close-panel">
+          <div class="item">
+            <h4>搜索栏</h4>
+          </div>
+          </a> </li>
+        <li> <a href="selector.html" class="close-panel">
+          <div class="item">
+            <h4>筛选面板</h4>
+          </div>
+          </a> </li>
+        <li> <a href="dropdown.html" class="close-panel">
+          <div class="item">
+            <h4>下拉菜单</h4>
+          </div>
+          </a> </li>
+        <li> <a href="editor.html" class="close-panel">
+          <div class="item">
+            <h4>文本编辑器</h4>
+          </div>
+          </a> </li>
+        <li> <a href="tab.html" class="close-panel">
+          <div class="item">
+            <h4>选项卡</h4>
+          </div>
+          </a> </li>
+        <li> <a href="loading.html" class="close-panel">
+          <div class="item">
+            <h4>加载</h4>
+          </div>
+          </a> </li>
+        <li> <a href="aside.html" class="close-panel">
+          <div class="item">
+            <h4>侧栏</h4>
+          </div>
+          </a> </li>
+        <li> <a href="modal.html" class="close-panel">
+          <div class="item">
+            <h4>弹窗操作</h4>
+          </div>
+          </a> </li>
+        <li> <a href="router.html" class="close-panel">
+          <div class="item">
+            <h4>路由</h4>
+          </div>
+          </a> </li>
+        <li> <a href="swiper.html" class="close-panel">
+          <div class="item">
+            <h4>幻灯片</h4>
+          </div>
+          </a> </li>
+        <li>
+          <div class="item-title">滚动刷新</div>
+        </li>
+        <li> <a href="pullrefresh.html" class="close-panel">
+          <div class="item">
+            <h4>下拉刷新</h4>
+          </div>
+          </a> </li>
+        <li> <a href="infinite-scroll.html" class="close-panel">
+          <div class="item">
+            <h4>向下滚动</h4>
+          </div>
+          </a> </li>
+        <li> <a href="infinite-scroll-top.html" class="close-panel">
+          <div class="item">
+            <h4>向上滚动</h4>
+          </div>
+          </a> </li>
+        <li> <a href="infinite-scroll-tab.html" class="close-panel">
+          <div class="item">
+            <h4>选项卡带滚动</h4>
+          </div>
+          </a> </li>
+      </ul>
+      <!-- 点击链接 class="close-panel" 将关闭面板 -->
+      <p>
+        <button class="btn btn-link close-panel">关闭</button>
+      </p>
+    </div>
+  </div>
+</div>
+<script src="../js/mm.js"></script> 
+<script src="../js/mm-extend.js"></script> 
+<script src="../js/demo.js"></script>
+</body>
+</html>

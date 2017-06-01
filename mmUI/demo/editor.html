@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>mm的H5框架</title>
+<link rel="shortcut icon" href="/favicon.ico">
+<!-- css -->
+<link rel="stylesheet" href="../css/mm.css">
+<link rel="stylesheet" href="../css/mm-extend.css">
+<link rel="stylesheet" type="text/css" href="../css/theme.css">
+<!-- js -->
+<script src="../js/zepto.js"></script>
+<script src="../js/config.js"></script>
+</head>
+<body>
+<div class="page-group">
+  <div class="page page-current" id="page-index"> 
+    <!--你的html代码-->
+    <header class="bar bar-t">
+      <nav>
+        <div class="fl"><a href="#" class="back"><span>取消</span></a></div>
+        <div class="fr"><a href="#" class="btn btn-link back"><span>发送</span></a></div>
+        <div class="fm">编辑器</div>
+      </nav>
+    </header>
+    <div class="content">
+          <div class="gallery" id="gallery"> <span class="gallery-img" id="galleryImg"></span>
+        <div class="gallery-opr"> <a href="javascript:" class="gallery-del"> <i class="weui-icon-delete"></i> </a> </div>
+      </div>
+      <section>
+              <div class="list form">
+              <ul>
+      <li>
+                <div class="control">
+                  <textarea name="" type="text" placeholder="这一刻的想法" data-bind="textinput: textarea"></textarea>
+                  <span class="textarea-count" data-bind="text: textarea().length + '/200'">0/200</span></div>
+              </li>
+              <li>
+                <div class="control bn">
+                    <ul class="upfiles" id="upFiles">
+                      <li class="upfile" style="background-image:url(../img/pic_160.png)"></li>
+                    </ul>
+                    <div class="upinput-box">
+                      <input id="upInput" class="upinput" type="file" accept="image/*" multiple>
+                    </div>
+                </div>
+              </li>
+<li><a href="/Forum?mod=Business"><div class="item link-arrow mini"><aside class="media"><i class="icon icon-map-marker text-primary"></i></aside> <h4>发送位置</h4></div></a></li>
+              </ul>
+              </div>
+      </section>
+    </div>
+  </div>
+</div>
+<script src="../js/mm.js"></script> 
+<script src="../js/mm-extend.js"></script> 
+<script src="../js/demo.js"></script>
+</body>
+</html>

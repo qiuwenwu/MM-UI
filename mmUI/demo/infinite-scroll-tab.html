@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>mm的H5框架</title>
+<link rel="shortcut icon" href="/favicon.ico">
+<!-- css -->
+<link rel="stylesheet" href="../css/mm.css">
+<link rel="stylesheet" href="../css/mm-extend.css">
+<link rel="stylesheet" type="text/css" href="../css/theme.css">
+<!-- js -->
+<script src="../js/zepto.js"></script>
+<script src="../js/config.js"></script>
+</head>
+<body>
+<div class="page-group">
+  <div class="page page-current" id="page-index"> 
+    <!--你的html代码-->
+	<header class="bar bar-t">
+        <nav>
+          <div class="fl"><a href="#" class="back"><i class="icon icon-menu-left"></i><span>返回</span></a></div>
+          <div class="fm">选项卡</div>
+        </nav>
+    </header>
+    <div class="content">
+      <div class="buttons-tab btns-fixed"> <a href="#tab1" class="tab-link active btn">全部</a> <a href="#tab2" class="tab-link btn">待付款</a> <a href="#tab3" class="tab-link btn">待发货</a> </div>
+      <div class="tabs">
+        <div id="tab1" class="tab active">
+          <section class="content-block">
+            <div class="control-group"> <a href="#tab1-1" class="tab-link active btn btn-success">Tab 1</a> <a href="#tab1-2" class="tab-link btn btn-success">Tab 2</a> <a href="#tab1-3" class="tab-link btn btn-success">Tab 3</a> <a href="#tab1-4" class="tab-link btn btn-success">Tab 4</a></div>
+            <div class="tabs">
+              <p class="tab active" id="tab1-1">This is tab 1-1 content</p>
+              <p class="tab" id="tab1-2">This is tab 1-2 content</p>
+              <p class="tab" id="tab1-3">13855589778</p>
+              <p class="tab" id="tab1-4">13855589778</p>
+			</div>
+		  </section>
+        </div>
+        <div id="tab2" class="tab infinite-scroll infinite-scroll-bottom" data-distance="20">
+        <section>
+        <div class="list lr">
+          <ul>
+            <li> <a href="#">
+              <div class="item">
+                <article>
+                  <h4>条目</h4>
+                </article>
+              </div>
+              </a> </li>
+            <li> <a href="#">
+              <div class="item">
+                <article>
+                  <h4>条目</h4>
+                </article>
+              </div>
+              </a> </li>
+            <li> <a href="#">
+              <div class="item">
+                <article>
+                  <h4>条目</h4>
+                </article>
+              </div>
+              </a> </li>
+            <li> <a href="#">
+              <div class="item">
+                <article>
+                  <h4>条目</h4>
+                </article>
+              </div>
+              </a> </li>
+                          <li> <a href="#">
+              <div class="item">
+                <article>
+                  <h4>条目</h4>
+                </article>
+              </div>
+              </a> </li>
+                          <li> <a href="#">
+              <div class="item">
+                <article>
+                  <h4>条目</h4>
+                </article>
+              </div>
+              </a> </li>
+            <li> <a href="#">
+              <div class="item">
+                <article>
+                  <h4>条目</h4>
+                </article>
+              </div>
+              </a> </li>
+            <li> <a href="#">
+              <div class="item">
+                <article>
+                  <h4>条目</h4>
+                </article>
+              </div>
+              </a> </li>
+            <li> <a href="#">
+              <div class="item">
+                <article>
+                  <h4>条目</h4>
+                </article>
+              </div>
+              </a> </li>
+            <li> <a href="#">
+              <div class="item">
+                <article>
+                  <h4>条目</h4>
+                </article>
+              </div>
+              </a> </li>
+            <li> <a href="#">
+              <div class="item">
+                <article>
+                  <h4>条目</h4>
+                </article>
+              </div>
+              </a> </li>
+            <li> <a href="#">
+              <div class="item">
+                <article>
+                  <h4>条目</h4>
+                </article>
+              </div>
+              </a> </li>
+            <li> <a href="#">
+              <div class="item">
+                <article>
+                  <h4>条目</h4>
+                </article>
+              </div>
+              </a> </li>
+            <li> <a href="#">
+              <div class="item">
+                <article>
+                  <h4>条目</h4>
+                </article>
+              </div>
+              </a> </li>
+          </ul>
+        </div>
+        <!-- 加载提示符 -->
+        <div class="infinite-scroll-preloader">
+          <div class="preloader"></div>
+        </div>
+      </section>
+        </div>
+        <div id="tab3" class="tab">
+          <div class="content-block">
+            <p>This is tab 3 content</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="../js/mm.js"></script>
+<script src="../js/mm-extend.js"></script>
+<script src="../js/demo.js"></script>
+</body>
+</html>

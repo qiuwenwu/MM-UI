@@ -1,0 +1,10 @@
+jweixin-1.0.0.js用于微信分享
+knockout.js、knockout.mapping.js 用于MvvM
+
+zepto.js手机版的jQurey框架
+mm.js、mm-extend.js 用于html动态效果。
+mm-city-picker.js 用于省市区选择器
+swiper.min.js用于幻灯片
+
+config.js 用于路由
+demo.js 用于动态效果示例
