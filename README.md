@@ -5,3 +5,4 @@ mmUI的css未压缩文件大小为50KB，是suiUI的1/2，是Bootstrap的1/6，�
 mmUI的框架可以结合Vue.js一同使用，同时还附带了mm-http.js文件，可以通过函数view()的方式渲染模板和引用模板文件，实现了前端只要会写json而不用写程序码的效果。
 效果演示：
 http://mmui.elins.cn/demo/index.html
+演示站2： http://dwz.cn/mm-ui
