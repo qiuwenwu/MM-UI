@@ -392,9 +392,10 @@ to {opacity:0;}
 .bar-chat .fm { overflow: hidden; }
 .bar-chat input {display: block; background-color:#fff;border:1px solid #e5e5e5;border-radius:.2rem;color:#333;font-weight:400;padding:.25rem;outline:none; width:calc(100% - 1rem); font-size:0.85rem; margin-top:2px;}
 
-.bar-chat .btn { margin-right:0.25rem; margin-top:2px; }
+.bar-chat .btn { margin-right:.25rem; margin-top:2px; }
 
 /* 聊天气泡 */
+.chat .nick{ font-size:.85rem; line-height:1.6; }
 .balloon img { max-width:15rem; }
 .balloon { position:relative; max-width:calc(100% - 4.5rem); padding:.35rem; background:#B2E866; border-radius:.35rem; /* 圆角 */ margin:0 .4rem; overflow: visible; display:inline-block;border: 1px solid #ccc; }
 .chat-l,.chat-r {overflow:hidden; clear:both; float: none; margin-bottom: 1rem;}
@@ -402,7 +403,7 @@ to {opacity:0;}
 .chat-l dt{ float:left; margin-left:0.5rem; }
 .chat dd { overflow:hidden; }
 .chat-r dt { float:right; margin-left:0.5rem; }
-.chat-r h6 { text-align:right; }
+.chat-r .nick { text-align: right; float:right; }
 .chat-r .balloon {float:right;}
 .chat-r .balloon:after { display:inline-block; content:""; position:absolute; top:0.75rem; right:-0.65rem;width:0;height:0;font-size:0;border:solid .35rem;border-color:transparent transparent transparent #B2E866;}
 .chat-t {clear:both;text-align:center; margin-top:0.5rem; min-height:1.5rem; overflow:hidden;}
