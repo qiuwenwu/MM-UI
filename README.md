@@ -6,3 +6,4 @@ mmUI的框架可以结合Vue.js一同使用，同时还附带了mm-http.js文件
 效果演示：
 http://mmui.elins.cn/demo/index.html
 演示站2： http://dwz.cn/mm-ui
+![image](https://github.com/573242395/mm-UI/blob/master/mmUI/pic/article.jpg)
