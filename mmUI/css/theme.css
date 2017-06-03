@@ -1,11 +1,11 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 .page, body { background-color: #efeff4; }/* #f8f8f8 */
 body { color:#333; }
 article {background:#FFF; }
 
 /* 项目 */
 .form,.grid,.card,.list { background:#FFF; }
-.list { border-bottom:1px solid #e5e5e5; border-top:1px solid #e5e5e5; }
+.list { border-bottom:1px solid #e5e5e5; }
 .item article {background:none; }
 .item-title { background:#f8f8f8; color:#666; }
 .item h5 { color: #666; }
@@ -47,10 +47,12 @@ a:active, a:focus{ background-color: #ECECEC; }
 
 /* 链接样式 */
 .link-none {background:none;}
-.link-arrow,.link-close,.link-point,.link-point-l {padding-right:1.5rem !important;background-image:url("../img/arrow.png");background-size:0.7rem;background-repeat:no-repeat;background-position:97% center;background-position:-webkit-calc(100% - .5rem) center;background-position:calc(100% - .5rem) center;}
+.link-arrow,.link-close {padding-right:1.5rem !important;background-image:url("../img/arrow.png");background-size:0.7rem;background-repeat:no-repeat;background-position:97% center;background-position:calc(100% - .5rem) center;}
 .link-close {background-image:url("../img/close.png");}
-.link-point,.link-point-l {background-image:url("../img/point.png");}
-.link-point-l {background-size:0.5rem;padding-right:0;background-position:.25rem center;background-position:-webkit-calc(.25rem) center;background-position:calc(.25rem) center;}
+.link-point,.link-point-l {background-image:url("../img/point.png");background-size:0.7rem;background-repeat:no-repeat;background-position:97% center;background-position:calc(100% - .5rem) center;}
+.link-point { padding-right:1.5rem !important; }
+.link-point-l {background-size:0.5rem;background-position:left center;}
+.lr .link-point-l { background-position:.25rem center; }
 
 .tool a{ background:none; color:#666; }
 .tool a:active, .tool a:focus, .tool .active { color: #1AAD19; }
@@ -96,7 +98,7 @@ nav a:active,.nav a:active, nav a:focus,.nav a:focus, nav .active,.nav .active {
 .control .btn-link { color: #3CC51F; }
 .control .btn-s { color: #666; }
 .btn-link:active,.btn-link:focus { background: #ECECEC; }
-.disabled { pointer-events: none;filter:alpha(opacity=65); -moz-opacity:0.65; -khtml-opacity: 0.65; opacity: 0.65; }
+.disabled { pointer-events: none;filter:alpha(opacity=65); opacity: 0.65; }
 
 .control-group input ~ .btn-default-x:last-child,.control-group input ~ .btn-primary-x:last-child,.control-group input ~ .btn-success-x:last-child,.control-group input ~ .btn-info-x:last-child,.control-group input ~ .btn-warning-x:last-child,.control-group input ~ .btn-danger-x:last-child { border-color:#CCC; }
 
